@@ -26,11 +26,15 @@ if (condition) {
 
 *******************************************************
 
+// Reference types DATA TYPE
+
 // Arrays
 
 var guestList = ["raj","jack", "pam"];
 console.log(guestlist);
 console.log(guestList[1]);   ans:- jack
+
+console.log(Array.isArray(guestList));   ans:- it will return true if it is array.
 
 guestList.includes("raj");   ans:- it will return ture if given input is in array
 
@@ -38,8 +42,30 @@ guestList.push("hello");     ans:- it will add "hello" in array at the end of ar
 
 guestLIst.pop();             ans:- it will remove last element
 
+guestList.unshift("rohit")   ans:- it will add "rohit" at the begining of array.
+
+guestList.shift();           ans:- it will remove element from start.
+
 ********************************************************
 
+// Clone array
+
+let array1 = ["item1", "item2"];
+
+let array2 = array1.slice(0);
+let array2 = [].concat(array1);
+
+*spread operator
+let array2 = [...array1];
+
+
+let array2 = array1.slice(0).concat(["item3", "item4"]);
+let array2 = [].concat(array1, ["item3", "item4"]);
+let array2 = [...array1, ...oneMoreArray];
+
+
+
+********************************************************
 // loops
 
 while (condition) {
@@ -51,6 +77,32 @@ for (let index = 0; index < array.length; index++) {
   
 }
 
+for( let fruit of fruits) {
+  console.log(fruit);
+}
+
+for (let index in fruits) {
+  console.log(index);
+}
+
+********************************************************
+
+// Array Destructuring
+
+const myArray = ["value1", "value2", "value3"];
+
+let [myvar1, myvar2] = myArray;
+
+* if we want to skip any value 
+let [myvar1, , myvar2] = myArray;
+
+* if we want to put value2 and vlaue3 in seperate array
+let [myvar1, ...newArray] = myArray;
+
+
+********************************************************
+
+ 
 */
 
 

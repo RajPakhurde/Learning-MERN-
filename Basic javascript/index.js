@@ -98,7 +98,8 @@ myStr = Number(myStr) * this is second method to convert.
 alert("hello there, " + myname + " is Raj");
 
 // Template string
-let age = 22;
+let age = 22; 
+
 let name = "raj";
 let aboutMe = `my name is ${name} and my age is ${age}`;
 
@@ -114,10 +115,18 @@ let aboutMe = `my name is ${name} and my age is ${age}`;
 // falsy values
 1. ""
 2. null
-3. null
+3. false
 4. undefined
 5. 0
 
 **************************************************************
+
+// Ternary operator / conditional operator
+
+let age = 15;
+let drink = age >= 5 ? "coffee" : "milk";
+
+****************************************************************
+
 
 */

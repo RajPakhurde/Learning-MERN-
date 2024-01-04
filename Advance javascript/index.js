@@ -41,7 +41,7 @@ cont obj = {
 
 *********************************************************************************
 
-// spred operator in objects
+// spread operator in objects
 
 const obj1 = {
     key1 : "value1";

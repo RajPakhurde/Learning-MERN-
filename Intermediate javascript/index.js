@@ -102,6 +102,110 @@ let [myvar1, ...newArray] = myArray;
 
 ********************************************************
 
+// functions
+
+function singHappyBirthday() {
+    console.log()
+}
+
+// functin expression
+
+const singHappyBirthday = function() {
+    cnosole.log()
+}
+
+// Arrow functions
+
+const singHappyBirthday = () => {
+    console.log()
+}
+
+const isEven = number => number % 2 === 0 ;
+
+*****************************************************************
+
+// function  inside function
+
+funtion hello () {
+    funtion add() {
+        console.log()
+    }
+
+    const mul = (num1, num2) => {
+        console.log(num1 * num2)
+    }
+
+    mul(1,2);
+    add()
+}
+
+*****************************************************************
+
+// default parameters
+
+funtion add( a, b=0) {
+    return a+b;
+}
+
+add(4);
+
+*****************************************************************
+
+// rest paramenters
+
+function addAll(...numbers) {
+    let total = 0;
+    for(let number of numbers) {
+        total = total + number;
+    }
+    return total;
+}
+
+*****************************************************************
+
+// parameteres destructuring
+
+const person = {
+    firstName: "raj",
+    gender: "male"
+}
+
+funtion printDetails({firstName, gender}) {
+    console.log(firstName);
+    console.log(gender);
+}
+
+printDetails(person);
+
+*****************************************************************
+
+// callback functions
+
+function myfunc2(name) {
+    console.log();
+}
+
+function myfunc(callback) {
+    console.log();
+    callback();
+}
+
+myfunc(myfunc2);
+
+*****************************************************************
+
+// function returning function
+
+function myFunc() {
+    function hello() {
+        return "hello world";
+    }
+    return hello;
+}
+
+const ans = myfunc();
+console.log(ans());
+
  
 */
 

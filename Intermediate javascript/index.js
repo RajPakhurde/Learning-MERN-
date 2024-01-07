@@ -108,7 +108,7 @@ function singHappyBirthday() {
     console.log()
 }
 
-// functin expression
+// functin expression / ananyomas
 
 const singHappyBirthday = function() {
     cnosole.log()

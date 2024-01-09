@@ -20,8 +20,12 @@ inquirer
     var qr_svg = qr.image(url);
     qr_svg.pipe(fs.createWriteStream("qr_img.png"));
     fs.writeFile("Url.txt",url, (err) => {
-        if(err) throw err;
-        console.log("file saved");
+        if(err) {
+          throw err;
+        }  else {
+          console.log("file saved");
+        }
+        
     })
   })
   .catch((error) => {

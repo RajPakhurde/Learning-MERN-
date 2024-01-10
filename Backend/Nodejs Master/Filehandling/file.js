@@ -1,12 +1,16 @@
 const fs = require("fs");
+const os = require("os");
 
+console.log("cups are ",os.cpus().length );
+
+// Sync... is a Blocking operation
 fs.writeFileSync("./test.txt", "Hey there");
 
 // syncronas will return so we have to store in variable
 const result = fs.readFileSync("./test.txt", "utf-8");
 console.log(result);
 
-// async.. 
+// async.. Non Blocking operation
 fs.readFile("./test.txt", "utf-8", (err, result) => {
     if(err){
         console.log(err);

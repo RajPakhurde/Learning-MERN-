@@ -22,5 +22,15 @@ document.querySelector("h1").classList.toggle("invisible");
 document.querySelector("a").getAttribute("href");
 document.querySelector("a").setAttribute("href", "https://www.bing.com");       // it will change the attribute value to the given value.
 
+*/ 
 
-*/
+
+
+
+
+
+
+ 
+
+
+

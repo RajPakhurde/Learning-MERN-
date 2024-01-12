@@ -26,7 +26,7 @@ users.forEach((user) => {
 
 // map
 
-* map method will new array so we have to store in different variable to access it.
+* map method will return new array object so we have to store in different variable to access it.
 * it should return new array.
 
 const numbers = [3,4,6,1,8];
@@ -50,6 +50,8 @@ const userNames = users.map((user) => {
 })
 
 console.log(userNames);
+
+* if we are using map on arrays or object it will return new object
 
 ****************************************************************************
 

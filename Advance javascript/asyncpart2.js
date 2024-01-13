@@ -165,7 +165,7 @@ getPost()
 
 console.log("Script end");    
 
-*/
+
 
 console.log("Script start");
 
@@ -175,3 +175,4 @@ setTimeout(() => {
 
 console.log("Script end");
  
+*/

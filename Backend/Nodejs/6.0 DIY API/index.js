@@ -86,7 +86,7 @@ app.delete("/all", (req, res) => {
     jokes = [];
     res.sendStatus(200);
   } else {
-    res.status(404).json({error: `You are not authorised to perfrom this action.`})
+    res.status(404).json({error: `You are not authorised to perfrom this actioa`})
   }
 })
 

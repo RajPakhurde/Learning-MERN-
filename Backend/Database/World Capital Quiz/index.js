@@ -31,7 +31,7 @@ db.query("SELECT * FROM capitals", (err, res) => {
 });
 
 let totalCorrect = 0;
-
+ 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
